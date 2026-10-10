@@ -19,6 +19,11 @@ const canvas = document.querySelector("canvas.webgl");
 const scene = new THREE.Scene();
 
 /**
+ * Textures
+ */
+const bakedTexture = textureLoader.load("baked.jpg");
+
+/**
  * Materials
  */
 // Baked material
@@ -48,12 +53,12 @@ gltfLoader.load("3js-tv-scene.glb", (gltf) => {
 /**
  * Object
  */
-const cube = new THREE.Mesh(
-  new THREE.BoxGeometry(1, 1, 1),
-  new THREE.MeshBasicMaterial(),
-);
+// const cube = new THREE.Mesh(
+//   new THREE.BoxGeometry(1, 1, 1),
+//   new THREE.MeshBasicMaterial(),
+// );
 
-scene.add(cube);
+// scene.add(cube);
 
 /**
  * Sizes
